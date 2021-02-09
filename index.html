@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="validation.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+	<h2>Εγγραφή</h2>		
+		<!-- <form action="#" name="registration" method="post"> -->
+		<form action="#" name="registration" id="registration" method="post">
+
+			<label for="firstname">Όνομα</label>
+			<input type="text" name="firstname" id="firstname" placeholder="John">
+			<div class="error_form" id="firstname_error_message"></div>
+
+			<label for="lastname">Επίθετο</label>
+			<input type="text" name="lastname" id="lastname" placeholder="Doe">	
+			<div class="error_form" id="lastname_error_message"></div>
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="john@doe.com">
+			<div class="error_form" id="email_error_message"></div>
+
+			<label for="password">Κωδικός</label>
+			<input type="password" name="password" id="password" placeholder="●●●●●">
+			<div class="error_form" id="password_error_message"></div>
+
+			<button type="submit">Κάνε εγγραφή</button>
+		</form>
+</div>
+
+</body>
+</html>
